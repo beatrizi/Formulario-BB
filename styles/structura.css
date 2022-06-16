@@ -1,0 +1,60 @@
+nav a:visited{
+    color: green;
+}
+
+
+#span-contenedor{color: coral;
+}
+
+.encabezados{
+	margin: 20px;
+
+	color: blueviolet;
+}
+/* ~  hermanos del mismo padre . Ignora los nietos que tenga la misma etiqueta pero */
+.encabezados h3 ~ h3{
+	font-size: 25px;
+
+	color: black;
+}
+
+/* Selector de identificador */
+#parrafo1{
+	font-size: 15px;
+	font-weight: bold;
+
+	color: greenyellow;
+}
+
+.logo{
+	height: 50px;
+}
+
+nav{
+	display: inline;
+}
+
+
+/*Combinadores de css
+DESCENDIENTES .parraro p{coge todo los hijos de parrafo  que estan dentro de papa incluye hijos, nietos lo que baje y tenga la etiqueta p}
+
+COMBINADORES DEL HIJO .parraro >p{solo coge hijos directo de parraro que tengan la etiqueta p y se olvida del resto}
+
+HERMANOS DEL MISMO PADRE .parrafo p~p {ignora al primogenito de parrafo y al resto de hijos que son p los aplica, es como si cuenta desde abajo arriba ignorando al primer directo hijo}  coge del 2p al ultimo hijo p 
+1 P
+2 P
+3 Span
+4 p
+5 p
+
+
+HERMANOS ADJACENTE .parrafo p+p {nuestro papa es parrafo pero solo toma encuenta a los hermanos pegados PERO SE IGNORA AL PRIMOGENITO O AL QUE SALIO DE ALGUNA AVENTURA  
+1 P
+2 P
+3 Span
+4 p
+5 p
+p+p cogeria al hermano 2p y 5p
+}
+
+*/
