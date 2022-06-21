@@ -1,0 +1,62 @@
+/* Estilos de los encabezados */
+.encabezados{
+	display: inline-block;
+
+	width: 250px;
+    /*margin separa div y si en diferentes div separamos con diferentes px prevalece el de valor mayor*/
+	margin-bottom: 20px;
+	padding: 5px 10px 15px 20px;
+
+	color: blueviolet;
+	border: 5px dashed black;
+	background-color: bisque;
+}
+
+.encabezados div{
+	width: 30%;
+}
+
+.parrafos{
+	display: inline-block;
+
+	width: 200px;
+	margin-top: 30px;
+    /*padding: diferentes de 2 valores izq-dcha arriba-abajo
+    4 valores separados: orden aguja del reloj arriba, dcha, abajo, izq arriba*/
+	padding: 5px 10px 15px 20px;
+    /*border ancho, style y color*/
+	border: 5px dashed blue;
+	background-color: brown;
+}
+
+.encabezados h3 ~ h3{
+	font-size: 25px;
+
+	color: black;
+}
+
+/* Selector de identificador */
+#parrafo1{
+	font-size: 15px;
+	font-weight: bold;
+
+	color: greenyellow;
+}
+
+.logo{
+	height: 50px;
+}
+
+nav{
+	display: inline;
+}
+
+
+/*Display
+como se coloca el elemento respecto al resto
+valores: 
+-display block, los elementos se ponen uno debajo del otro(viene por defecto) y respeta las dimensiones
+-inLine, multiples elemetnso por lineas, no respeta ancho, el alto ni margenes, ejm enlaces, span.
+-inLine-block, mezcla ambos, mete varios elementos y repsta ancho y alto.
+
+*/

@@ -1,0 +1,52 @@
+/*
+TAMANOS
+- min-hieght y min width
+- max-height y max-width
+- box-sizing
+*/
+
+/*
+TIPOS DE UNIDADES
+--ABSOLUTAS
+    no dependen del tano del anvegador punto, pt; pulgandas, in; centimetro,cm; pixeles, px
+
+--RELATIVAS
+    dependen del tamano del navegador y otros elementos
+    * % porcentaje  del elemento padre
+    *vw or vh viewport sobre la pantalla que se visualiza
+    *em, rem realativo al font-size de otros elementos
+
+
+
+*/
+
+/* Estilos de los encabezados */
+.encabezados{
+	margin: 20px;
+
+	color: blueviolet;
+}
+
+.encabezados h3 ~ h3{
+	font-size: 25px;
+
+	color: black;
+}
+
+/* Selector de identificador */
+#parrafo1{
+	font-size: 15px;
+	font-weight: bold;
+
+	color: greenyellow;
+}
+
+.logo{
+	height: 50px;
+}
+
+nav{
+	display: inline;
+}
+
+
