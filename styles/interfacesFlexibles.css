@@ -1,0 +1,117 @@
+/* https://www.youtube.com/watch?v=4RI0XoEXuP4&list=PL3aEngjGbYhkaYFfN6TQCldf2jl1GUYVs&index=4
+*Todas las propiedades asociadas : https://css-tricks.com/snippets/css/a...
+*Pruebas gráficas, muy interesante: https://flexbox.help/
+Display flex, nos da una fomra mas eficiente de alienary distribuir los elementos en un contenedor
+el contenedor modifica la altura y la anchura de sus hijos para aprovechar el espacio al maximo
+Ideal para adaptar disenos a todos tiepo de pantalla o dispositivo
+*/
+/*Propiedades del contenedor
+-flex-direction, establece la direccin en la que e colocaran los hijos
+    row (horizontal, repetando el orden de html)
+    column (de arriba abajo)
+    row-reverse(inversa en html)
+    column-reverse
+-flex-wrap, los hijos ocupan varias lineas o solo una
+    wrap, si los hijos no caben en una linea metelo en otra linea
+    nowrap, forzara a meter todos los elementos forzando el width
+-justify-context, indica como se alinean los -hijos- elementos si sobra espacio en el eje princial (flex-direction)
+    flex-start
+    flex-end
+    center
+    space-between
+Si sobra espacio y alquta como alineamos??
+-align-items, alineacion en eje secundario (flex-direction: row, su secuandario es vertical.
+    stretch
+    flex-start
+    flex-end
+    center
+-align-content, alineacin de las lineas competas
+*/
+
+/*Propiedad de los hijos
+Order, del html
+flex-grow, como crecen en funcin del espacio disponible, por defecto valor 0
+flex-shrink, como decrecen en uncion espacio disponible.
+
+*/
+
+
+/** Estilos de los encabezados */
+
+section{
+
+	display: flex;
+
+	align-content: center;
+
+	flex-wrap: wrap;
+
+	justify-content: center;
+
+
+	height: 35rem;
+
+}
+
+
+.encabezados{
+
+	display: flex;
+
+	align-items: center;
+
+	justify-content: space-around;
+
+
+	width: 1200px;
+
+	margin-bottom: 20px;
+
+	padding: 10px;
+
+
+	color: blueviolet;
+
+	background-color: rgb(214, 214, 214);
+
+}
+
+
+.encabezados div{
+
+	flex-grow: 1;
+
+}
+
+
+#grande{
+
+	flex-grow: 3;
+
+}
+
+
+.encabezados h3 ~ h3{
+
+	font-size: 25px;
+
+
+	color: black;
+
+}
+
+
+.logo{
+
+	height: 50px;
+
+}
+
+
+nav{
+
+	display: inline;
+
+}
+
+
